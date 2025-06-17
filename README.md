@@ -1,8 +1,10 @@
+![UI Components Screenshot](img.jpg)
+
 # Reusable UI Components Library
 
 A modern, lightweight UI component library built with HTML and CSS. This project serves as a living style guide and component showcase.
 
-live link - reusable-ui-components-green.vercel.app
+[Live Demo](https://reusable-ui-components-green.vercel.app/)
 
 ## Features
 
