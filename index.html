@@ -11,22 +11,39 @@
     <h1>Reusable UI Components - Live Style Guide</h1>
   </header>
   <div class="container">
-    <!-- Sidebar Navigation -->
-    <nav class="sidebar">
-      <ul>
-        <li><a href="#" class="nav-link active" data-section="home">Home</a></li>
-        <li><a href="#" class="nav-link" data-section="navbar">Navbar</a></li>
-        <li><a href="#" class="nav-link" data-section="buttons">Buttons</a></li>
-        <li><a href="#" class="nav-link" data-section="cards">Cards</a></li>
-        <li><a href="#" class="nav-link" data-section="forms">Forms</a></li>
-        <li><a href="#" class="nav-link" data-section="badges">Badges</a></li>
-      </ul>
-    </nav>
-    <main>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <h2>UI Components</h2>
+        </div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="#" class="nav-link active" data-section="home">Home</a></li>
+                <li><a href="#" class="nav-link" data-section="navbar">Navbar</a></li>
+                <li><a href="#" class="nav-link" data-section="buttons">Buttons</a></li>
+                <li><a href="#" class="nav-link" data-section="cards">Cards</a></li>
+                <li><a href="#" class="nav-link" data-section="forms">Forms</a></li>
+                <li><a href="#" class="nav-link" data-section="badges">Badges</a></li>
+                <li><a href="#" class="nav-link" data-section="alerts">Alerts</a></li>
+                <li><a href="#" class="nav-link" data-section="tooltips">Tooltips</a></li>
+                <li><a href="#" class="nav-link" data-section="modals">Modals</a></li>
+                <li><a href="#" class="nav-link" data-section="tabs">Tabs</a></li>
+                <li><a href="#" class="nav-link" data-section="accordions">Accordions</a></li>
+                <li><a href="#" class="nav-link" data-section="progress">Progress Bars</a></li>
+                <li><a href="#" class="nav-link" data-section="breadcrumbs">Breadcrumbs</a></li>
+                <li><a href="#" class="nav-link" data-section="pagination">Pagination</a></li>
+                <li><a href="#" class="nav-link" data-section="spinners">Spinners</a></li>
+                <li><a href="#" class="nav-link" data-section="hover-cards">Cards with Hover</a></li>
+                <li><a href="#" class="nav-link" data-section="tables">Tables</a></li>
+                <li><a href="#" class="nav-link" data-section="toggles">Toggles</a></li>
+              </ul>
+        </nav>
+    </aside>
+    <main class="main-content">
       <!-- Home Section -->
       <section id="home" class="section active">
         <div class="hero">
-          <h2>Welcome to Our UI Component Library</h2>
+          <h2>Welcome to Kanak's UI Component Library</h2>
           <p class="hero-text">A collection of beautiful, reusable components for your next project.</p>
           <div class="features">
             <div class="feature-card">
@@ -53,11 +70,56 @@
       <section id="navbar" class="section">
         <h2>Navbar</h2>
         <div class="component-demo">
+          <h3>Simple Navbar</h3>
           <nav class="navbar">
             <a href="#" class="navbar-brand">Brand</a>
             <ul class="navbar-nav">
               <li><a href="#">Home</a></li>
               <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="component-demo">
+          <h3>Navbar with Search</h3>
+          <nav class="navbar navbar-search">
+            <a href="#" class="navbar-brand">Brand</a>
+            <ul class="navbar-nav">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+            <form class="navbar-search-form">
+              <input type="text" placeholder="Search..." class="navbar-search-input">
+              <button type="submit" class="btn btn-primary">Go</button>
+            </form>
+          </nav>
+        </div>
+        <div class="component-demo">
+          <h3>Navbar with Dropdown</h3>
+          <nav class="navbar navbar-dropdown">
+            <a href="#" class="navbar-brand">Brand</a>
+            <ul class="navbar-nav">
+              <li><a href="#">Home</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle">Services</a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Web Design</a></li>
+                  <li><a href="#">Development</a></li>
+                  <li><a href="#">SEO</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="component-demo">
+          <h3>Centered Navbar</h3>
+          <nav class="navbar navbar-centered">
+            <ul class="navbar-nav">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">Blog</a></li>
               <li><a href="#">Contact</a></li>
             </ul>
           </nav>
@@ -68,9 +130,37 @@
       <section id="buttons" class="section">
         <h2>Buttons</h2>
         <div class="component-demo">
+          <h3>Basic Buttons</h3>
           <button class="btn btn-primary">Primary Button</button>
           <button class="btn btn-secondary">Secondary Button</button>
           <button class="btn" disabled>Disabled Button</button>
+        </div>
+        <div class="component-demo">
+          <h3>Outline Buttons</h3>
+          <button class="btn btn-outline-primary">Primary Outline</button>
+          <button class="btn btn-outline-secondary">Secondary Outline</button>
+        </div>
+        <div class="component-demo">
+          <h3>Color Buttons</h3>
+          <button class="btn btn-success">Success</button>
+          <button class="btn btn-warning">Warning</button>
+          <button class="btn btn-danger">Danger</button>
+        </div>
+        <div class="component-demo">
+          <h3>Icon Button</h3>
+          <button class="btn btn-icon"><span class="icon">★</span> Star</button>
+        </div>
+        <div class="component-demo">
+          <h3>Block Button</h3>
+          <button class="btn btn-primary btn-block">Block Button</button>
+        </div>
+        <div class="component-demo">
+          <h3>Button Group</h3>
+          <div class="btn-group">
+            <button class="btn btn-primary">Left</button>
+            <button class="btn btn-primary">Middle</button>
+            <button class="btn btn-primary">Right</button>
+          </div>
         </div>
       </section>
 
@@ -78,12 +168,77 @@
       <section id="cards" class="section">
         <h2>Cards</h2>
         <div class="component-demo">
+          <h3>Basic Card</h3>
           <div class="card">
-            <img src="https://via.placeholder.com/150" alt="Card image" class="card-img">
+            <img src="https://imgs.search.brave.com/5JJkpFCQEwHPFzxGmOdBIAcqq0MCOoxbcFWVczlhV98/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMjgv/NTgyLzg0NS9zbWFs/bC9mdW5ueS1zdXJw/cmlzZWQtY2F0LXdp/dGgtYS1xdWVzdGlv/bmluZy1wb3NlLWEt/Y3V0ZS1raXR0ZW4t/YXNrcy1pbi1zdXJw/cmlzZS13aGVyZS10/aGUtdHJlYXRzLWFy/ZS1nZW5lcmF0ZWQt/YWktcGhvdG8uanBn" alt="Card image" class="card-img">
             <div class="card-body">
               <h3 class="card-title">Card Title</h3>
               <p class="card-text">This is a reusable card component. You can use it for products, profiles, etc.</p>
               <button class="btn btn-primary">Action</button>
+            </div>
+          </div>
+        </div>
+        <div class="component-demo">
+          <h3>Card with Image Top</h3>
+          <div class="card card-img-top">
+            <img src="https://imgs.search.brave.com/5JJkpFCQEwHPFzxGmOdBIAcqq0MCOoxbcFWVczlhV98/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMjgv/NTgyLzg0NS9zbWFs/bC9mdW5ueS1zdXJw/cmlzZWQtY2F0LXdp/dGgtYS1xdWVzdGlv/bmluZy1wb3NlLWEt/Y3V0ZS1raXR0ZW4t/YXNrcy1pbi1zdXJw/cmlzZS13aGVyZS10/aGUtdHJlYXRzLWFy/ZS1nZW5lcmF0ZWQt/YWktcGhvdG8uanBn" alt="Card image" class="card-img">
+            <div class="card-body">
+              <h3 class="card-title">Image Top Card</h3>
+              <p class="card-text">A card with a larger image at the top.</p>
+            </div>
+          </div>
+        </div>
+        <div class="component-demo">
+          <h3>Card with Image Left</h3>
+          <div class="card card-img-left">
+            <img src="https://imgs.search.brave.com/5JJkpFCQEwHPFzxGmOdBIAcqq0MCOoxbcFWVczlhV98/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMjgv/NTgyLzg0NS9zbWFs/bC9mdW5ueS1zdXJw/cmlzZWQtY2F0LXdp/dGgtYS1xdWVzdGlv/bmluZy1wb3NlLWEt/Y3V0ZS1raXR0ZW4t/YXNrcy1pbi1zdXJw/cmlzZS13aGVyZS10/aGUtdHJlYXRzLWFy/ZS1nZW5lcmF0ZWQt/YWktcGhvdG8uanBn" alt="Card image" class="card-img-left-img">
+            <div class="card-body">
+              <h3 class="card-title">Image Left Card</h3>
+              <p class="card-text">A card with an image on the left and content on the right.</p>
+            </div>
+          </div>
+        </div>
+        <div class="component-demo">
+          <h3>Card with Actions</h3>
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">Card with Actions</h3>
+              <p class="card-text">This card has multiple action buttons at the bottom.</p>
+              <div class="card-actions">
+                <button class="btn btn-primary">Accept</button>
+                <button class="btn btn-danger">Decline</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="component-demo">
+          <h3>Card with Badge</h3>
+          <div class="card">
+            <div class="card-body">
+              <span class="badge badge-success" style="float:right;">New</span>
+              <h3 class="card-title">Card with Badge</h3>
+              <p class="card-text">A card with a status badge in the corner.</p>
+            </div>
+          </div>
+        </div>
+        <div class="component-demo">
+          <h3>Profile Card</h3>
+          <div class="card profile-card">
+            <img src="img.jpg" alt="Profile" class="profile-img">
+            <div class="card-body">
+              <h3 class="card-title">kanak verma</h3>
+              <p class="card-text">Frontend Developer</p>
+              <button class="btn btn-primary btn-block">Follow</button>
+            </div>
+          </div>
+        </div>
+        <div class="component-demo">
+          <h3>Horizontal Card</h3>
+          <div class="card card-horizontal">
+            <img src="https://imgs.search.brave.com/5JJkpFCQEwHPFzxGmOdBIAcqq0MCOoxbcFWVczlhV98/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMjgv/NTgyLzg0NS9zbWFs/bC9mdW5ueS1zdXJw/cmlzZWQtY2F0LXdp/dGgtYS1xdWVzdGlv/bmluZy1wb3NlLWEt/Y3V0ZS1raXR0ZW4t/YXNrcy1pbi1zdXJw/cmlzZS13aGVyZS10/aGUtdHJlYXRzLWFy/ZS1nZW5lcmF0ZWQt/YWktcGhvdG8uanBn" alt="Card image" class="card-horizontal-img">
+            <div class="card-body">
+              <h3 class="card-title">Horizontal Card</h3>
+              <p class="card-text">A horizontal card layout for wide content.</p>
             </div>
           </div>
         </div>
@@ -93,6 +248,7 @@
       <section id="forms" class="section">
         <h2>Forms</h2>
         <div class="component-demo">
+          <h3>Basic Form</h3>
           <form class="form">
             <label for="name">Name</label>
             <input type="text" id="name" name="name" class="form-input">
@@ -108,15 +264,437 @@
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
         </div>
+        <div class="component-demo">
+          <h3>Form with Validation</h3>
+          <form class="form">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" class="form-input" required>
+            <small class="form-error">Username is required</small>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" class="form-input" required>
+            <small class="form-error">Password is required</small>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        <div class="component-demo">
+          <h3>Form with Icons</h3>
+          <form class="form">
+            <label for="search">Search</label>
+            <div class="form-icon">
+              <input type="text" id="search" name="search" class="form-input" placeholder="Search...">
+              <span class="icon">🔍</span>
+            </div>
+          </form>
+        </div>
+        <div class="component-demo">
+          <h3>Form with Checkbox/Radio Groups</h3>
+          <form class="form">
+            <label>Gender</label>
+            <div class="form-group">
+              <label><input type="radio" name="gender" value="male"> Male</label>
+              <label><input type="radio" name="gender" value="female"> Female</label>
+            </div>
+
+            <label>Interests</label>
+            <div class="form-group">
+              <label><input type="checkbox" name="interests" value="coding"> Coding</label>
+              <label><input type="checkbox" name="interests" value="design"> Design</label>
+              <label><input type="checkbox" name="interests" value="music"> Music</label>
+            </div>
+          </form>
+        </div>
+        <div class="component-demo">
+          <h3>Form with Select Dropdown</h3>
+          <form class="form">
+            <label for="country">Country</label>
+            <select id="country" name="country" class="form-select">
+              <option value="">Select a country</option>
+              <option value="us">United States</option>
+              <option value="ca">Canada</option>
+              <option value="uk">United Kingdom</option>
+            </select>
+          </form>
+        </div>
+        <div class="component-demo">
+          <h3>Form with File Upload</h3>
+          <form class="form">
+            <label for="file">Upload File</label>
+            <input type="file" id="file" name="file" class="form-file">
+          </form>
+        </div>
+        <div class="component-demo">
+          <h3>Form with Textarea</h3>
+          <form class="form">
+            <label for="bio">Bio</label>
+            <textarea id="bio" name="bio" class="form-textarea" rows="4"></textarea>
+          </form>
+        </div>
       </section>
 
       <!-- Badges Section -->
       <section id="badges" class="section">
         <h2>Badges</h2>
         <div class="component-demo">
+          <h3>Basic Badge</h3>
           <span class="badge badge-success">Success</span>
           <span class="badge badge-warning">Warning</span>
           <span class="badge badge-error">Error</span>
+        </div>
+        <div class="component-demo">
+          <h3>Badge with Icon</h3>
+          <span class="badge badge-icon"><span class="icon">✓</span> Approved</span>
+          <span class="badge badge-icon"><span class="icon">⚠</span> Alert</span>
+        </div>
+        <div class="component-demo">
+          <h3>Badge with Border</h3>
+          <span class="badge badge-border badge-success">Success</span>
+          <span class="badge badge-border badge-warning">Warning</span>
+          <span class="badge badge-border badge-error">Error</span>
+        </div>
+        <div class="component-demo">
+          <h3>Badge with Pill Shape</h3>
+          <span class="badge badge-pill badge-success">Success</span>
+          <span class="badge badge-pill badge-warning">Warning</span>
+          <span class="badge badge-pill badge-error">Error</span>
+        </div>
+        <div class="component-demo">
+          <h3>Badge with Gradient</h3>
+          <span class="badge badge-gradient badge-success">Success</span>
+          <span class="badge badge-gradient badge-warning">Warning</span>
+          <span class="badge badge-gradient badge-error">Error</span>
+        </div>
+        <div class="component-demo">
+          <h3>Badge with Shadow</h3>
+          <span class="badge badge-shadow badge-success">Success</span>
+          <span class="badge badge-shadow badge-warning">Warning</span>
+          <span class="badge badge-shadow badge-error">Error</span>
+        </div>
+      </section>
+
+      <section id="alerts" class="section">
+        <h2>Alerts</h2>
+        <div class="component-demo">
+          <h3>Basic Alerts</h3>
+          <div class="alert alert-success">Success Alert</div>
+          <div class="alert alert-warning">Warning Alert</div>
+          <div class="alert alert-error">Error Alert</div>
+          <div class="alert alert-info">Info Alert</div>
+        </div>
+      </section>
+
+      <section id="tooltips" class="section">
+        <h2>Tooltips</h2>
+        <div class="component-demo">
+          <h3>Basic Tooltips</h3>
+          <button class="btn btn-primary tooltip" data-tooltip="Top tooltip">Hover me (Top)</button>
+          <button class="btn btn-primary tooltip tooltip-bottom" data-tooltip="Bottom tooltip">Hover me (Bottom)</button>
+          <button class="btn btn-primary tooltip tooltip-left" data-tooltip="Left tooltip">Hover me (Left)</button>
+          <button class="btn btn-primary tooltip tooltip-right" data-tooltip="Right tooltip">Hover me (Right)</button>
+        </div>
+        <div class="component-demo">
+          <h3>Tooltips with Icons</h3>
+          <button class="btn btn-primary tooltip" data-tooltip="Info tooltip"><i class="fas fa-info-circle"></i></button>
+          <button class="btn btn-primary tooltip" data-tooltip="Warning tooltip"><i class="fas fa-exclamation-triangle"></i></button>
+          <button class="btn btn-primary tooltip" data-tooltip="Success tooltip"><i class="fas fa-check-circle"></i></button>
+        </div>
+      </section>
+
+      <section id="modals" class="section">
+        <h2>Modals</h2>
+        <div class="component-demo">
+          <h3>Basic Modal</h3>
+          <button class="btn btn-primary" onclick="openModal('basicModal')">Open Basic Modal</button>
+          <div id="basicModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h3>Basic Modal</h3>
+              <p>This is a basic modal dialog.</p>
+            </div>
+          </div>
+        </div>
+        <div class="component-demo">
+          <h3>Form Modal</h3>
+          <button class="btn btn-primary" onclick="openModal('formModal')">Open Form Modal</button>
+          <div id="formModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h3>Contact Form</h3>
+              <form>
+                <div class="form-group">
+                  <label>Name</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label>Email</label>
+                  <input type="email" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label>Message</label>
+                  <textarea class="form-control"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="tabs" class="section">
+        <h2>Tabs</h2>
+        <div class="component-demo">
+          <h3>Basic Tabs</h3>
+          <div class="tabs">
+            <div class="tab-buttons">
+              <button class="tab-btn active" data-tab="tab1">Tab 1</button>
+              <button class="tab-btn" data-tab="tab2">Tab 2</button>
+              <button class="tab-btn" data-tab="tab3">Tab 3</button>
+            </div>
+            <div class="tab-content">
+              <div class="tab-pane active" id="tab1">Content for Tab 1</div>
+              <div class="tab-pane" id="tab2">Content for Tab 2</div>
+              <div class="tab-pane" id="tab3">Content for Tab 3</div>
+            </div>
+          </div>
+        </div>
+        <div class="component-demo">
+          <h3>Vertical Tabs</h3>
+          <div class="tabs tabs-vertical">
+            <div class="tab-buttons">
+              <button class="tab-btn active" data-tab="vtab1">Tab 1</button>
+              <button class="tab-btn" data-tab="vtab2">Tab 2</button>
+              <button class="tab-btn" data-tab="vtab3">Tab 3</button>
+            </div>
+            <div class="tab-content">
+              <div class="tab-pane active" id="vtab1">Content for Tab 1</div>
+              <div class="tab-pane" id="vtab2">Content for Tab 2</div>
+              <div class="tab-pane" id="vtab3">Content for Tab 3</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="accordions" class="section">
+        <h2>Accordions</h2>
+        <div class="component-demo">
+          <h3>Basic Accordion</h3>
+          <div class="accordion">
+            <div class="accordion-item">
+              <button class="accordion-btn">Section 1</button>
+              <div class="accordion-content">Content for section 1</div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-btn">Section 2</button>
+              <div class="accordion-content">Content for section 2</div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-btn">Section 3</button>
+              <div class="accordion-content">Content for section 3</div>
+            </div>
+          </div>
+        </div>
+        <div class="component-demo">
+          <h3>Accordion with Icons</h3>
+          <div class="accordion accordion-icons">
+            <div class="accordion-item">
+              <button class="accordion-btn"><i class="fas fa-plus"></i> Section 1</button>
+              <div class="accordion-content">Content for section 1</div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-btn"><i class="fas fa-plus"></i> Section 2</button>
+              <div class="accordion-content">Content for section 2</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="progress" class="section">
+        <h2>Progress Bars</h2>
+        <div class="component-demo">
+          <h3>Basic Progress</h3>
+          <div class="progress">
+            <div class="progress-bar" style="width: 75%">75%</div>
+          </div>
+        </div>
+        <div class="component-demo">
+          <h3>Animated Progress</h3>
+          <div class="progress progress-animated">
+            <div class="progress-bar" style="width: 60%">60%</div>
+          </div>
+        </div>
+        <div class="component-demo">
+          <h3>Circular Progress</h3>
+          <div class="progress-circle">
+            <div class="progress-circle-text">75%</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="breadcrumbs" class="section">
+        <h2>Breadcrumbs</h2>
+        <div class="component-demo">
+          <h3>Basic Breadcrumbs</h3>
+          <div class="breadcrumbs">
+            <a href="#">Home</a>
+            <span>/</span>
+            <a href="#">Products</a>
+            <span>/</span>
+            <span>Current Page</span>
+          </div>
+        </div>
+        <div class="component-demo">
+          <h3>Breadcrumbs with Icons</h3>
+          <div class="breadcrumbs breadcrumbs-icons">
+            <a href="#"><i class="fas fa-home"></i> Home</a>
+            <span>/</span>
+            <a href="#"><i class="fas fa-box"></i> Products</a>
+            <span>/</span>
+            <span><i class="fas fa-file"></i> Current Page</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="pagination" class="section">
+        <h2>Pagination</h2>
+        <div class="component-demo">
+          <h3>Basic Pagination</h3>
+          <div class="pagination">
+            <a href="#" class="pagination-item">Previous</a>
+            <a href="#" class="pagination-item active">1</a>
+            <a href="#" class="pagination-item">2</a>
+            <a href="#" class="pagination-item">3</a>
+            <a href="#" class="pagination-item">Next</a>
+          </div>
+        </div>
+        <div class="component-demo">
+          <h3>Pagination with Icons</h3>
+          <div class="pagination pagination-icons">
+            <a href="#" class="pagination-item"><i class="fas fa-chevron-left"></i></a>
+            <a href="#" class="pagination-item active">1</a>
+            <a href="#" class="pagination-item">2</a>
+            <a href="#" class="pagination-item">3</a>
+            <a href="#" class="pagination-item"><i class="fas fa-chevron-right"></i></a>
+          </div>
+        </div>
+      </section>
+
+      <section id="spinners" class="section">
+        <h2>Spinners</h2>
+        <div class="component-demo">
+          <h3>Basic Spinner</h3>
+          <div class="spinner"></div>
+        </div>
+        <div class="component-demo">
+          <h3>Dots Spinner</h3>
+          <div class="spinner-dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="hover-cards" class="section">
+        <h2>Cards with Hover Effects</h2>
+        <div class="component-demo">
+          <h3>Basic Hover Card</h3>
+          <div class="card hover-card">
+            <div class="card-body">
+              <h4>Hover Card</h4>
+              <p>This card has a hover effect.</p>
+            </div>
+          </div>
+        </div>
+        <div class="component-demo">
+          <h3>Card with Scale Effect</h3>
+          <div class="card hover-card scale">
+            <div class="card-body">
+              <h4>Scale Card</h4>
+              <p>This card scales on hover.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="tables" class="section">
+        <h2>Tables</h2>
+        <div class="component-demo">
+          <h3>Basic Table</h3>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Role</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>John Doe</td>
+                <td>john@example.com</td>
+                <td>Admin</td>
+              </tr>
+              <tr>
+                <td>Jane Smith</td>
+                <td>jane@example.com</td>
+                <td>User</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="component-demo">
+          <h3>Striped Table</h3>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Role</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>John Doe</td>
+                <td>john@example.com</td>
+                <td>Admin</td>
+              </tr>
+              <tr>
+                <td>Jane Smith</td>
+                <td>jane@example.com</td>
+                <td>User</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="toggles" class="section">
+        <h2>Toggles</h2>
+        <div class="component-demo">
+          <h3>Basic Toggle</h3>
+          <label class="toggle">
+            <input type="checkbox">
+            <span class="toggle-slider"></span>
+          </label>
+        </div>
+        <div class="component-demo">
+          <h3>Toggle with Label</h3>
+          <label class="toggle toggle-with-label">
+            <input type="checkbox">
+            <span class="toggle-slider"></span>
+            <span class="toggle-label">Enable Feature</span>
+          </label>
+        </div>
+        <div class="component-demo">
+          <h3>Toggle with Icons</h3>
+          <label class="toggle toggle-icons">
+            <input type="checkbox">
+            <span class="toggle-slider">
+              <i class="fas fa-sun"></i>
+              <i class="fas fa-moon"></i>
+            </span>
+          </label>
         </div>
       </section>
     </main>
@@ -147,3 +725,4 @@
   </script>
 </body>
 </html>
+
