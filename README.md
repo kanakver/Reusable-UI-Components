@@ -1,4 +1,4 @@
-![UI Components Screenshot](img.jpg)
+![UI Components Screenshot](image.png)
 
 # Reusable UI Components Library
 
