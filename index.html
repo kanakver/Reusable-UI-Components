@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reusable UI Components - Style Guide</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Reusable UI Components - Live Style Guide</h1>
+  </header>
+  <div class="container">
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar">
+      <ul>
+        <li><a href="#" class="nav-link active" data-section="home">Home</a></li>
+        <li><a href="#" class="nav-link" data-section="navbar">Navbar</a></li>
+        <li><a href="#" class="nav-link" data-section="buttons">Buttons</a></li>
+        <li><a href="#" class="nav-link" data-section="cards">Cards</a></li>
+        <li><a href="#" class="nav-link" data-section="forms">Forms</a></li>
+        <li><a href="#" class="nav-link" data-section="badges">Badges</a></li>
+      </ul>
+    </nav>
+    <main>
+      <!-- Home Section -->
+      <section id="home" class="section active">
+        <div class="hero">
+          <h2>Welcome to Our UI Component Library</h2>
+          <p class="hero-text">A collection of beautiful, reusable components for your next project.</p>
+          <div class="features">
+            <div class="feature-card">
+              <h3>🎨 Clean Design</h3>
+              <p>Modern and minimalist components</p>
+            </div>
+            <div class="feature-card">
+              <h3>📱 Responsive</h3>
+              <p>Works on all devices</p>
+            </div>
+            <div class="feature-card">
+              <h3>⚡ Lightweight</h3>
+              <p>No dependencies required</p>
+            </div>
+          </div>
+          <div class="cta">
+            <button class="btn btn-primary">Get Started</button>
+            <button class="btn btn-secondary">View Components</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Navbar Section -->
+      <section id="navbar" class="section">
+        <h2>Navbar</h2>
+        <div class="component-demo">
+          <nav class="navbar">
+            <a href="#" class="navbar-brand">Brand</a>
+            <ul class="navbar-nav">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+
+      <!-- Buttons Section -->
+      <section id="buttons" class="section">
+        <h2>Buttons</h2>
+        <div class="component-demo">
+          <button class="btn btn-primary">Primary Button</button>
+          <button class="btn btn-secondary">Secondary Button</button>
+          <button class="btn" disabled>Disabled Button</button>
+        </div>
+      </section>
+
+      <!-- Cards Section -->
+      <section id="cards" class="section">
+        <h2>Cards</h2>
+        <div class="component-demo">
+          <div class="card">
+            <img src="https://via.placeholder.com/150" alt="Card image" class="card-img">
+            <div class="card-body">
+              <h3 class="card-title">Card Title</h3>
+              <p class="card-text">This is a reusable card component. You can use it for products, profiles, etc.</p>
+              <button class="btn btn-primary">Action</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Forms Section -->
+      <section id="forms" class="section">
+        <h2>Forms</h2>
+        <div class="component-demo">
+          <form class="form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" class="form-input">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" class="form-input">
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" class="form-textarea"></textarea>
+
+            <label><input type="checkbox" name="subscribe"> Subscribe to newsletter</label>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- Badges Section -->
+      <section id="badges" class="section">
+        <h2>Badges</h2>
+        <div class="component-demo">
+          <span class="badge badge-success">Success</span>
+          <span class="badge badge-warning">Warning</span>
+          <span class="badge badge-error">Error</span>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const navLinks = document.querySelectorAll('.nav-link');
+      const sections = document.querySelectorAll('.section');
+
+      navLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          
+          // Remove active class from all links and sections
+          navLinks.forEach(l => l.classList.remove('active'));
+          sections.forEach(s => s.classList.remove('active'));
+          
+          // Add active class to clicked link
+          link.classList.add('active');
+          
+          // Show corresponding section
+          const sectionId = link.getAttribute('data-section');
+          document.getElementById(sectionId).classList.add('active');
+        });
+      });
+    });
+  </script>
+</body>
+</html>
